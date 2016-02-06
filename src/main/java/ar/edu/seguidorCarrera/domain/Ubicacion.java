@@ -1,4 +1,4 @@
-package org.uqbar.arena.examples.materias.domain;
+package ar.edu.seguidorCarrera.domain;
 
 public enum Ubicacion {
 	

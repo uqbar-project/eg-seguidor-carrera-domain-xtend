@@ -1,11 +1,11 @@
-package org.uqbar.arena.examples.materias.domain.appModel
+package ar.edu.seguidorCarrera.appModel
 
 import java.util.Arrays
 import org.eclipse.xtend.lib.annotations.Accessors
-import org.uqbar.arena.examples.materias.domain.Carrera
-import org.uqbar.arena.examples.materias.domain.Materia
-import org.uqbar.arena.examples.materias.domain.Nota
-import org.uqbar.arena.examples.materias.domain.Ubicacion
+import ar.edu.seguidorCarrera.domain.Carrera
+import ar.edu.seguidorCarrera.domain.Materia
+import ar.edu.seguidorCarrera.domain.Nota
+import ar.edu.seguidorCarrera.domain.Ubicacion
 import org.uqbar.commons.utils.Observable
 
 @Observable

@@ -1,9 +1,9 @@
-package org.uqbar.arena.examples.materias.dummyData
+package ar.edu.seguidorCarrera.dummyData
 
-import org.uqbar.arena.examples.materias.domain.Carrera
-import org.uqbar.arena.examples.materias.domain.Materia
-import org.uqbar.arena.examples.materias.domain.Nota
-import org.uqbar.arena.examples.materias.domain.Ubicacion
+import ar.edu.seguidorCarrera.domain.Carrera
+import ar.edu.seguidorCarrera.domain.Materia
+import ar.edu.seguidorCarrera.domain.Nota
+import ar.edu.seguidorCarrera.domain.Ubicacion
 
 /**
  * Esta clase es simplemente un utils para crear objetos tontos
@@ -16,7 +16,7 @@ import org.uqbar.arena.examples.materias.domain.Ubicacion
  * 
  */
 class DummyData {
-	def crearCarreraDummy(){
+	def crearCarreraDummy() {
 		new Carrera => [
 			agregarMateria(crearMateria("Matematica Discreta"))
 			agregarMateria(crearMateria("Algoritmos"))
@@ -25,7 +25,7 @@ class DummyData {
 	}
 	
 	def Materia crearMateria(String nombreDeLaMateria){
-		new Materia() => [
+		new Materia => [
 			nombreMateria = nombreDeLaMateria
 			anioCursada = 2014
 			profesor = '''Jose «nombreDeLaMateria»'''

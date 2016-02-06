@@ -1,8 +1,7 @@
-package org.uqbar.arena.examples.materias.domain
+package ar.edu.seguidorCarrera.domain
 
 import java.util.List
 import org.eclipse.xtend.lib.annotations.Accessors
-import org.uqbar.commons.model.ObservableUtils
 import org.uqbar.commons.utils.Observable
 
 @Observable
@@ -10,17 +9,12 @@ import org.uqbar.commons.utils.Observable
 class Carrera {
 	List<Materia> materias
 	
-	new(){ 
+	new() { 
 		materias = newArrayList
 	}
 	
-	def agregarMateria(Materia materia){
+	def void agregarMateria(Materia materia){
 		materias.add(materia)
-		ObservableUtils.firePropertyChanged(this, "materias", materias)
-	}
-	
-	def getMaterias(){
-		materias
 	}
 	
 }
