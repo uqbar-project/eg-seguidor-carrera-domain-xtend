@@ -1,12 +1,12 @@
 package ar.edu.seguidorCarrera.appModel
 
-import java.util.Arrays
-import org.eclipse.xtend.lib.annotations.Accessors
 import ar.edu.seguidorCarrera.domain.Carrera
 import ar.edu.seguidorCarrera.domain.Materia
 import ar.edu.seguidorCarrera.domain.Nota
 import ar.edu.seguidorCarrera.domain.Ubicacion
-import org.uqbar.commons.utils.Observable
+import java.util.Arrays
+import org.eclipse.xtend.lib.annotations.Accessors
+import org.uqbar.commons.model.annotations.Observable
 
 @Observable
 @Accessors
