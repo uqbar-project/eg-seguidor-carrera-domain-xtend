@@ -1,8 +1,8 @@
 package ar.edu.seguidorCarrera.domain
 
 import java.util.List
+import org.apache.commons.lang.StringUtils
 import org.eclipse.xtend.lib.annotations.Accessors
-import org.uqbar.commons.model.ObservableUtils
 import org.uqbar.commons.utils.Observable
 
 @Observable
@@ -28,5 +28,11 @@ class Materia {
 	def eliminarNota(Nota nota) {
 		this.notas.remove(nota)
 	}
+
+    def buscarNota(String descripcionNota) {
+        this.notas.findFirst[ 
+            StringUtils.deleteWhitespace(it.descripcion).toLowerCase == descripcionNota.toLowerCase
+        ]    
+    }
 	
 }
