@@ -2,9 +2,9 @@ package ar.edu.seguidorCarrera.domain
 
 import java.util.Date
 import org.eclipse.xtend.lib.annotations.Accessors
-import org.uqbar.commons.model.annotations.Observable
+import org.uqbar.commons.model.annotations.TransactionalAndObservable
 
-@Observable
+@TransactionalAndObservable
 @Accessors
 class Nota {
 	
